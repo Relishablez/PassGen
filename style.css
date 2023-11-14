@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #333;
+    color: white;
+    text-align: center;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    padding: 10px;
+}
+
+#password-display {
+    margin: 10px;
+    padding: 15px;
+    border: 2px solid #666;
+    background-color: #222;
+    word-break: break-all;
+}
+
+#password-strength {
+    /* Common styles for the strength label */
+    margin: 10px;
+    padding: 10px;
+    border-radius: 2px;
+    color: navy;
+    font-weight: bold;
+}
+
+.weak { background-color: indianred; }
+.moderate { background-color: orangered; }
+.strong { background-color: yellowgreen; }
+.very-strong { background-color: lightskyblue; }
+.incredible { background-color: purple; }
+
+#password-length {
+    font-size: 1em;  /* Text inside dropdown */
+    padding: 10px 0px; /* Bigger box */
+    margin: 0 5px;
+}
+
+button {
+    font-size: 1em;  /* Larger text for emojis */
+    padding: 10px 10px; /* Larger padding for bigger buttons */
+    margin: 0px;
+    background-color: #555;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #777;
+}

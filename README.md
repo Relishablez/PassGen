@@ -1,7 +1,7 @@
 # Password Generator
 
 ## Why did I make this?
-I made this as a personal project for password complexity (currently using Math see below for Strength Assessment) but might revisit to use Crytographic techniques (CSPRNGs) however `crypto.getRandomValue()` [has some exploitable vulnerabilities](https://security.snyk.io/package/npm/crypto-random-string).   
+I made this as a personal project for password complexity (currently using Math see [below](https://passwordsgenerator.net/old.php) for Strength Assessment) but might revisit to use Crytographic techniques (CSPRNGs) however `crypto.getRandomValue()` [has some exploitable vulnerabilities](https://security.snyk.io/package/npm/crypto-random-string).   
 Inspiration is from: [Password Generator](https://passwordsgenerator.net/old.php)
 
 ## Introduction

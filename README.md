@@ -34,7 +34,7 @@ The password strength is assessed based on length and character complexity:
 
 ## Installation
 
-To use this password generator, simply include the JavaScript file in your HTML and link the necessary elements (buttons, display areas) as per the provided IDs.
+To use this password generator locally, simply include the JavaScript file in your HTML and link the necessary elements (buttons, display areas) as per the provided IDs. Alternatively, download all necessary files (CSS, JS, HTML) and put them in 1 folder then run the `.HTML` file.
 
 ## 📜 License
 [MIT License](./LICENSE)

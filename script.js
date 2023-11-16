@@ -48,7 +48,7 @@ function assessPasswordStrength(password, selectedLength) {
     // Length-based strength
     if (selectedLength >= 256) strength += 50; // Adds significant weight for length >= 256
     else if (selectedLength >= 25) strength += 5; // For length 25 to 128 (Very Strong)
-    else if (selectedLength >= 15) strength += 3; // For length 15 (potentially) to 30 (Strong)
+    else if (selectedLength >= 15) strength += 3; // For length 15 (Upper Moderate) to 30 (Strong)
     else if (selectedLength >= 12) strength += 2; // For length 12 to 16 (Moderate)
     else if (selectedLength >= 8) strength += 1; // For length up to 12 (Weak)
 

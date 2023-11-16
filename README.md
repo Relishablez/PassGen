@@ -1,4 +1,4 @@
-# Password Generator
+# Simple Password Generator
 
 ## Why did I make this?
 I made this as a personal project for password complexity - currently using Math see [below](https://github.com/Relishablez/PassGen/blob/main/README.md#password-strength-assessment) for Strength Assessment) but might revisit to use Crytographic techniques (CSPRNGs) however `crypto.getRandomValue()` [has some exploitable vulnerabilities](https://security.snyk.io/package/npm/crypto-random-string).   

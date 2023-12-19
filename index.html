@@ -8,7 +8,7 @@
 </head>
 <body>
     <div class="container">
-        <h1>🔑🔐Secure Password Generator</h1>
+        <h1>🔑🔐Password Generator</h1>
 
         <label for="password-length">Password Length:</label>
         <div style="display: inline-block;">
@@ -147,8 +147,11 @@
                     <option value="2048">2048 characters</option>
                 </optgroup>
             </select>
-            <button id="increase-length">👆🔼</button>
-            <button id="decrease-length">👇🔽</button>
+            <button id="increase-lengthBy1">➕1</button>
+            <button id="decrease-lengthBy1">➖1</button>
+            <button id="increase-lengthBy5">➕5</button>
+            <button id="decrease-lengthBy5">➖5</button>
+            <button id="resetPasswordLength">🔄RESET length🔁</button>
         </div>
           
 
@@ -168,17 +171,19 @@
             <input type="checkbox" id="include-symbols" checked>
             <label for="include-symbols">Include Symbols</label>
         </div>
+        <div>
+            <input type="checkbox" id="include-special-characters" checked>
+            <label for="include-special-characters">Include Special Characters</label>
+        </div>
+
 
         <button id="generate-password">Generate Password</button>
+        <button id="generate-recommended-password">Generate Recommended Password</button>
         <button id="copy-password">Copy to Clipboard</button>
         <div id="password-strength"></div>
-
-
         <div id="password-display"></div>
-        <div id="password-strength"></div>
         <div id="password-history"></div>
     </div>
-
     <script src="script.js"></script>
 </body>
 </html>

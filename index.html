@@ -35,7 +35,7 @@
                     <option value="22">22 characters</option>
                     <option value="23">23 characters</option>
                     <option value="24">24 characters</option>
-                    <option value="25">25 characters</option>
+                    <option value="25" selected>25 characters</option>
                     <option value="26">26 characters</option>
                     <option value="27">27 characters</option>
                     <option value="28">28 characters</option>
@@ -181,7 +181,10 @@
         <button id="generate-recommended-password">Generate Recommended Password</button>
         <button id="copy-password">Copy to Clipboard</button>
         <div id="password-strength"></div>
-        <div id="password-display"></div>
+        <div id="password-display">
+    		<pre><code id="password-code"></code></pre>
+		</div>
+
         <div id="password-history"></div>
     </div>
     <script src="script.js"></script>

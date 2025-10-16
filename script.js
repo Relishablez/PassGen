@@ -6,7 +6,7 @@ document.getElementById('decrease-lengthBy1').addEventListener('click', decrease
 document.getElementById('increase-lengthBy5').addEventListener('click', increasePasswordLengthBy5);
 document.getElementById('decrease-lengthBy5').addEventListener('click', decreasePasswordLengthBy5);
 document.getElementById('resetPasswordLength').addEventListener('click', resetPasswordLength);
-document.getElementById('password-length').addEventListener('change', updateLengthDisplay);
+
 
 
 const passwordDisplay = document.getElementById('password-display');
@@ -40,7 +40,7 @@ function generatePassword() {
         password += character;
     }
 
-    passwordDisplay.textContent = password;
+    document.getElementById("password-code").textContent = password;
     assessPasswordStrength(password, length);
 }
 
@@ -57,11 +57,13 @@ function generateRecommendedPassword() {
 
 
 function copyToClipboard() {
-    if (passwordDisplay.textContent === '') return;
-    navigator.clipboard.writeText(passwordDisplay.textContent)
+    const passwordText = document.getElementById("password-code").textContent;
+    if (!passwordText) return;
+    navigator.clipboard.writeText(passwordText)
         .then(() => alert('Password copied to clipboard!'))
-        .catch(err => console.error('Error in copying text: ', err));
+        .catch(err => console.error('Error copying password: ', err));
 }
+
 
 function assessPasswordStrength(password, selectedLength) {
     let strength = 0;
@@ -137,11 +139,3 @@ function resetPasswordLength() {
     document.getElementById('password-length').value = '6'; // set password length to 6
 }
 
-function updateLengthDisplay() {
-    var select = document.getElementById('password-length');
-    var selectedOption = select.options[select.selectedIndex];
-    var selectedValue = selectedOption.value;
-    selectedOption.textContent = selectedValue; // Update display to show only the number
-}
-
-updateLengthDisplay();

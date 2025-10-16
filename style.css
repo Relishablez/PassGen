@@ -12,12 +12,30 @@ body {
 }
 
 #password-display {
-    margin: 10px;
+    margin: 10px auto;
     padding: 15px;
     border: 2px solid #666;
-    background-color: #222;
+    background-color: #1e1e1e;
+    color: #00ff99;
+    font-family: 'Fira Code', monospace;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 255, 153, 0.2);
+    max-width: 700px;
+    overflow-x: auto;
+}
+
+#password-display pre {
+    margin: 0;
+    white-space: pre-wrap;
     word-break: break-all;
 }
+
+#password-code {
+    display: block;
+    font-size: 1.1rem;
+    letter-spacing: 0.03em;
+}
+
 
 #password-strength {
     /* Common styles for the strength label */
